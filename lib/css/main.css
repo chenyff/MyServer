@@ -1,0 +1,133 @@
+body{
+	font-family:"Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 36px;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	text-align: left;
+}
+h1,h2,h3,h4,h5,h6,form,img,ul,ol,li,dl,dt,dd,div,span,p{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-style: normal;
+	font-weight: normal
+}
+img,object{
+	vertical-align: bottom
+}
+input,textarea,select{
+	font-family: "Arial","Microsoft YaHei";
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	border: 0;
+	outline: 0;
+	line-height: 28px;
+	vertical-align: middle;
+}
+input.text,textarea,select{
+	border: 1px solid #dcdcdc;
+	padding: 0 0 0 5px;
+	vertical-align: top;
+}
+input.text,select{
+	height: 28px;
+}
+li{
+	list-style-type: none;
+	list-style: none
+}
+ul li{
+	float: none;
+}
+a{
+	text-decoration: none;color: #333;
+}
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both
+}
+.clearfix{
+	*zoom: 1
+}
+
+/*css样式开始*/
+.header{
+	height: 50px;line-height: 50px;padding-top: 20px;border-bottom:2px solid  #dd514c;
+}
+.container{
+	max-width: 980px;padding: 0 10px;margin: 0 auto;
+}
+.sitename{
+	float: left;
+}
+.nav-right{
+	float: right;font-size: 16px;
+}
+.nav-right li{
+	float: left;margin-left: 30px;
+}
+
+.animate {
+  -webkit-animation-duration: .9s;
+  animation-duration: .9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+  -webkit-animation-name: animate;
+  animation-name: animate; 
+}
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px); 
+     }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); 
+    } 
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } 
+}
+
+@media screen and (max-width: 768px) {
+  .welcome h2 {
+    font-size: 24px; }
+  .section .section-left {
+    float: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px; }
+  .section .section-main {
+    padding-left: 0;
+    margin-top: 15px; } 
+}
+.nav{
+	text-align: center;
+}
+.nav ul li{
+	display: inline-block;
+	width: 200px;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	padding-top: 10px;
+}
+.footer{
+	padding: 100px 0 80px;
+	background: #142333;
+	position: fixed;bottom: 0;
+	width: 100%;
+}
