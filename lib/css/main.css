@@ -55,16 +55,19 @@ a{
 .clearfix{
 	*zoom: 1
 }
+.textcen{
+	text-align: center;
+}
 
 /*css样式开始*/
 .header{
 	height: 50px;line-height: 50px;padding-top: 20px;border-bottom:2px solid  #dd514c;
 }
 .container{
-	max-width: 980px;padding: 0 10px;margin: 0 auto;
+	max-width: 980px;padding:10px;margin: 0 auto;
 }
 .sitename{
-	float: left;
+	float: left;font-weight: bold;
 }
 .nav-right{
 	float: right;font-size: 16px;
@@ -73,47 +76,6 @@ a{
 	float: left;margin-left: 30px;
 }
 
-.animate {
-  -webkit-animation-duration: .9s;
-  animation-duration: .9s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
-  -webkit-animation-name: animate;
-  animation-name: animate; 
-}
-@-webkit-keyframes animate {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-40px); 
-     }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0); 
-    } 
-}
-
-@keyframes animate {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } 
-}
-
-@media screen and (max-width: 768px) {
-  .welcome h2 {
-    font-size: 24px; }
-  .section .section-left {
-    float: none;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px; }
-  .section .section-main {
-    padding-left: 0;
-    margin-top: 15px; } 
-}
 .nav{
 	text-align: center;
 }
@@ -124,10 +86,74 @@ a{
 	height: 50px;
 	line-height: 50px;
 	padding-top: 10px;
+	cursor: pointer;
 }
+.nav ul li:hover{
+	border-bottom: 2px solid #000;
+}
+.nav ul li.onhover{
+	border-bottom: 2px solid #000;
+}
+#welcome {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s; 
+  padding: 40px 0;
+  margin-bottom: 0px;
+}
+.welcome h2{
+	font: bold 60px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+}
+.welcome h3{
+	font: bold 30px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4; 
+}
+.lian{
+	border: 2px solid #dd514c;
+	border-bottom: none;margin: 50px auto;
+}
+.mainCon ul{
+	display: none;padding:0 10%;
+}
+.mainCon ul li{
+	clear: both;cursor: pointer;
+}
+.mainCon ul li:hover{
+    border-bottom: 2px solid #dd514c;
+}
+.mainTitle{
+	font-size: 16px;float: left;
+}
+.mainTime{
+    font-size: 14px;float: right;
+}
+
+
 .footer{
-	padding: 100px 0 80px;
+	padding: 100px 0 30px;
 	background: #142333;
-	position: fixed;bottom: 0;
 	width: 100%;
+	color: #fff;
+	margin-top: 30px;
+}
+.myWeb li{
+	display: inline-block;padding: 0 20px;
+}
+.myWeb li a{
+	color: #fff;font-size: 16px;cursor: pointer;
+}
+
+
+
+
+
+/*关于我*/
+.aboutMe{
+	padding-left: 100px;
+}
+.weixin dt{
+	width: 150px;height: 150px;overflow: hidden;margin-left: -10px;
+}
+.weixin img{
+	width: 150px;height: 150px;
 }

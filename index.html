@@ -4,7 +4,7 @@
 	<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>陈宇飞</title>
+    <title>DaFei</title>
     <link rel="stylesheet" href="lib/css/main.css">
 	<script type="text/javascript" src="lib/js/jquery.min.js"></script>
 	<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
@@ -14,37 +14,111 @@
 	<header class="header animate"> 
 		<div class="container"> 
 			<h2 class="sitename"> 
-				<a href="/">RainFly(宇飞)</a> 
+				<a href="/">DaFei</a> 
 			</h2> 
 			<ul class="nav-right"> 
 				<li> 
 					<a href="/">Blog</a> 
 				</li>  
 				<li>
-				 	<a href="/about.html">About</a> 
+				 	<a href="pages/about.html">About</a> 
 				</li> 
 			</ul> 
 		</div> 
 	</header>
-	<nav class="nav animate">
+	
+    <section class="welcome animate" id="welcome">
+        <div class="container">
+       		 <h2 class="textcen">Read Me</h2>
+       		 <h3 class="textcen">我的随想随录</h3>
+        </div>
+    </section>
+    <nav class="nav animate">
 		<ul>
-			<li>
-				<a href="javascript:;">我说</a>
+			<li class="onhover">
+				<a href="javascript:;">技术</a>
 			</li>
 			<li>
-				<a href="javascript:;">我看</a>
+				<a href="javascript:;">闲聊</a>
 			</li>
 			<li>
-				<a href="javascript:;">我听</a>
-			</li>
-			<li>
-				<a href="javascript:;">我操</a>
+				<a href="javascript:;">情怀</a>
 			</li>
 		</ul>
 	</nav>
-
-    <footer class="footer">
-    	sss
+	<!-- 门帘 -->
+	<div class="lian container"></div>
+	<!-- 主要内容 -->
+	<div class="container mainCon">
+	    <!-- 技术 -->
+		<ul style="display:block;">
+			<li class="clearfix">
+				<a href="javascript:;" class="mainTitle">Mac下如何停止node服务</a>
+				<span class="mainTime">2016-9-17</span>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;" class="mainTitle">移动端或PC端无法点击返回按钮</a>
+				<span class="mainTime">2016-9-17</span>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;" class="mainTitle">动态引入外部文件</a>
+				<span class="mainTime">2016-9-17</span>
+			</li>
+		</ul>
+		<!-- 闲聊 -->
+		<ul>
+			<li class="clearfix">
+				<a href="javascript:;" class="mainTitle">像风走了八千里</a>
+				<span class="mainTime">2016-9-17</span>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;" class="mainTitle">不问归期</a>
+				<span class="mainTime">2016-9-17</span>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;" class="mainTitle">像雨洒落在热带与极地</a>
+				<span class="mainTime">2016-9-17</span>
+			</li>
+		</ul>
+		<!-- 情怀 -->
+		<ul>
+			<li class="clearfix">
+				<a href="javascript:;" class="mainTitle">像鲸沉于海底温柔呼吸</a>
+				<span class="mainTime">2016-9-17</span>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;" class="mainTitle">像日落前洒下的余晖</a>
+				<span class="mainTime">2016-9-17</span>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;" class="mainTitle">像星辰奔波亿万年黑夜</a>
+				<span class="mainTime">2016-9-17</span>
+			</li>
+		</ul>
+	</div>
+    <footer class="footer textcen">
+	    <ul class="myWeb">
+	    	<li>
+	    		<a href="http://blog.sina.com.cn/dafeihui">我的博客</a>
+	    	</li>
+	    	<li>
+	    		<a href="http://weibo.com/dafeibobo/home?wvr=5">我的微博</a>
+	    	</li>
+	    	<li>
+	    		<a href="https://www.zhihu.com/people/chen-yu-fei-29-9">我的知乎</a>
+	    	</li>
+	    	<li>
+	    		<a href="https://github.com/chenyff">我的Github</a>
+	    	</li>
+	    </ul>
+    	<p>Copyright © 2016 隶属于 陈宇飞</p>
     </footer>
+	<script>
+		$(document).on("click",".nav ul li",function(){
+			var index = $(this).index();
+			$(this).addClass("onhover").siblings().removeClass("onhover");
+			$(".mainCon ul").eq(index).show().siblings().hide();
+		})
+	</script>
 </body>
 </html>
