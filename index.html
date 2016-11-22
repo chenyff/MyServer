@@ -1,124 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
 	<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>DaFei</title>
-    <link rel="stylesheet" href="lib/css/main.css">
-	<script type="text/javascript" src="lib/js/jquery.min.js"></script>
-	<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
-</head>
-</head>
-<body>
-	<header class="header animate"> 
-		<div class="container"> 
-			<h2 class="sitename"> 
-				<a href="/">DaFei</a> 
-			</h2> 
-			<ul class="nav-right"> 
-				<li> 
-					<a href="/">Blog</a> 
-				</li>  
-				<li>
-				 	<a href="pages/about.html">About</a> 
-				</li> 
-			</ul> 
-		</div> 
-	</header>
-	
-    <section class="welcome animate" id="welcome">
-        <div class="container">
-       		 <h2 class="textcen">Read Me</h2>
-       		 <h3 class="textcen">我的随想随录</h3>
-        </div>
-    </section>
-    <nav class="nav animate">
-		<ul>
-			<li class="onhover">
-				<a href="javascript:;">技术</a>
-			</li>
-			<li>
-				<a href="javascript:;">闲聊</a>
-			</li>
-			<li>
-				<a href="javascript:;">情怀</a>
-			</li>
-		</ul>
-	</nav>
-	<!-- 门帘 -->
-	<div class="lian container"></div>
-	<!-- 主要内容 -->
-	<div class="container mainCon">
-	    <!-- 技术 -->
-		<ul style="display:block;">
-			<li class="clearfix">
-				<a href="javascript:;" class="mainTitle">Mac下如何停止node服务</a>
-				<span class="mainTime">2016-9-17</span>
-			</li>
-			<li class="clearfix">
-				<a href="javascript:;" class="mainTitle">移动端或PC端无法点击返回按钮</a>
-				<span class="mainTime">2016-9-17</span>
-			</li>
-			<li class="clearfix">
-				<a href="javascript:;" class="mainTitle">动态引入外部文件</a>
-				<span class="mainTime">2016-9-17</span>
-			</li>
-		</ul>
-		<!-- 闲聊 -->
-		<ul>
-			<li class="clearfix">
-				<a href="javascript:;" class="mainTitle">像风走了八千里</a>
-				<span class="mainTime">2016-9-17</span>
-			</li>
-			<li class="clearfix">
-				<a href="javascript:;" class="mainTitle">不问归期</a>
-				<span class="mainTime">2016-9-17</span>
-			</li>
-			<li class="clearfix">
-				<a href="javascript:;" class="mainTitle">像雨洒落在热带与极地</a>
-				<span class="mainTime">2016-9-17</span>
-			</li>
-		</ul>
-		<!-- 情怀 -->
-		<ul>
-			<li class="clearfix">
-				<a href="javascript:;" class="mainTitle">像鲸沉于海底温柔呼吸</a>
-				<span class="mainTime">2016-9-17</span>
-			</li>
-			<li class="clearfix">
-				<a href="javascript:;" class="mainTitle">像日落前洒下的余晖</a>
-				<span class="mainTime">2016-9-17</span>
-			</li>
-			<li class="clearfix">
-				<a href="javascript:;" class="mainTitle">像星辰奔波亿万年黑夜</a>
-				<span class="mainTime">2016-9-17</span>
-			</li>
-		</ul>
-	</div>
-    <footer class="footer textcen">
-	    <ul class="myWeb">
-	    	<li>
-	    		<a href="http://blog.sina.com.cn/dafeihui">我的博客</a>
-	    	</li>
-	    	<li>
-	    		<a href="http://weibo.com/dafeibobo/home?wvr=5">我的微博</a>
-	    	</li>
-	    	<li>
-	    		<a href="https://www.zhihu.com/people/chen-yu-fei-29-9">我的知乎</a>
-	    	</li>
-	    	<li>
-	    		<a href="https://github.com/chenyff">我的Github</a>
-	    	</li>
-	    </ul>
-    	<p>Copyright © 2016 隶属于 陈宇飞</p>
-    </footer>
-	<script>
-		$(document).on("click",".nav ul li",function(){
-			var index = $(this).index();
-			$(this).addClass("onhover").siblings().removeClass("onhover");
-			$(".mainCon ul").eq(index).show().siblings().hide();
-		})
-	</script>
-</body>
+		<meta charset="UTF-8">
+		<title>防患于未然</title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no" />
+		<!-- 清除缓存的meta标签-->
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="0">
+		<link rel="stylesheet" type="text/css" href="lib/css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/css/swiper.min.css"/>
+		<script src="lib/js/h5-fontsize.js"></script>
+		<script src="lib/js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<a href="index.html" class="logo">
+					<img src="lib/img/logo.jpg"/>
+				</a>
+				<a href="#" class="history"></a>
+				<a href="#" class="search"></a>
+			</div>
+		</header>
+		<nav>
+			<div class="menu">
+				<div class="menu_all">
+					 <ul>
+				     	<li class="menu_now">
+				     		<a href="#">精选</a>
+				     	</li>
+				     	<li>
+				     		<a href="#">黄金单身汉</a>
+				     	</li>
+				     	<li>
+				     		<a href="#">综艺</a>
+				     	</li>
+				     	<li>
+				     		<a href="#">电影</a>
+				     	</li>
+				     	<li>
+				     		<a href="#">电视剧</a>
+				     	</li>
+				     	<li>
+				     		<a href="#">动漫</a>
+				     	</li>
+				     	<li>
+				     		<a href="#">少儿</a>
+				     	</li>
+				     	<li>
+				     		<a href="#">音乐</a>
+				     	</li>
+				     	<li>
+				     		<a href="#">新闻</a>
+				     	</li>
+				     	<li>
+				     		<a href="#">逗爸</a>
+				     	</li>
+				     </ul>
+				</div>
+			    
+			</div>
+			
+		</nav>
+		<div class="banner">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        		<img src="lib/img/1.jpg"/>
+			        </div>
+			        <div class="swiper-slide">
+			        		<img src="lib/img/2.jpg"/>
+			        </div>
+			        <div class="swiper-slide">
+			        		<img src="lib/img/3.jpg"/>
+			        </div>
+			        <div class="swiper-slide">
+			        		<img src="lib/img/4.jpg"/>
+			        </div>
+			    </div>
+			</div>
+			<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+				<span class="swiper-pagination-bullet"></span>
+			</div>
+		</div>
+		<script src="lib/js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        centeredSlides: true,
+		        autoplay: 2500,
+		        autoplayDisableOnInteraction: false
+		    });
+		</script>
+	</body>
 </html>

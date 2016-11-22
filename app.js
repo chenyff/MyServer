@@ -1,7 +1,10 @@
 var express = require('express');
-var app = express();
+var fs = require('fs');
+var path = require('path');
 
+var app = express();
+app.use(express.static(path.join(__dirname)));
 app.get('/', function(req, res) {
-  res.send('hello world');
+  fs.createReadStream("./index.html").pipe(res);
 });
 app.listen(80);
